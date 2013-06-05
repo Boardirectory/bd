@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-language" content="" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="resource-type" content="document" />
+		<meta name="distribution" content="global" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title> {% if pagetitle %}{{pagetitle}} &bull; {% endif %}{{lang.sitename}}</title>
+		<link href="{{directory_root}}theme.php?theme={{style.name}}" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="navBar" class="gradient1">
+				<a href="{{directory_root}}">Home</a>
+			</div>
+			<div id="header" class="gradient2">
+				<a href="{{directory_root}}" id="logo"></a>
+			</div>
+			<div id="breadcrumbs" class="gradient1">
+				<a class="icon-home" href="#">Home</a>
+				<a class="right" href="#">Right</a>
+			</div>				 
+			<div id="innerPage">
+				{% include template %}
+			</div>
+			<footer>
+				<div id="navBarFooter" class="gradient2">
+					<a href="#">Home</a>
+				</div>
+				<div id="copyright">
+					Boardirectory.org &copy; All Rights Reserved.<br />
+					Powered By General Directory Script &copy; Jeroen Bollen & Brad Veryard, All Rights Reserved
+				</div> 
+			</footer>
+		</div>
+	</body>
+</html>
